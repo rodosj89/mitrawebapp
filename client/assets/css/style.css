@@ -1,0 +1,376 @@
+/*GLOBAL*/
+html, body{
+  margin: 0px;
+  height: 100%;
+  background: #eee;
+  overflow-x: hidden;
+}
+
+.row{
+  height: 100%;
+}
+
+.actived{
+  border-bottom: 4px solid #84BD00;
+  padding-bottom: 4px;
+}
+
+.central{
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.seguro{
+  margin-top: -30px;
+  background: #222326;
+  position: absolute;
+}
+
+.seguro-song{
+  background: #eee;
+  right: 10px;
+  margin-top: -34px;
+}
+
+/*BARRA LATERAL*/
+#menu{
+  position: fixed;
+  z-index: 1;
+}
+.head-title{
+  font-size: : 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.navigation{
+  text-align: center;
+  color: white;
+  background: #1C1C1F;
+  height: 100%;
+}
+
+.navigation a{
+  color: #ddd;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.navigation a:hover{
+  color: white;
+}
+
+.navigation .glyphicon{
+  font-size: 25px;
+  display: block;
+  width: 100%;
+}
+
+#user_logged{
+  text-align: center;
+  background: #1C1C1F;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid #444;
+  width: 75%;
+}
+
+#user_logged .user-image{
+  background: #eee;
+  border-radius: 100px;
+  height: 57px;
+  width: 57px;
+  margin: 0px auto;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#user_logged .user-image img{
+  width: 57px;
+}
+
+.btn-logout{
+  cursor:  pointer;
+}
+
+/*DETALLE DE ARTISTA Y ALBUM*/
+#artist-head-card .image,
+#album-head-card .image{
+  width: 165px;
+  height: 165px;
+  overflow: hidden;
+  float: left;
+  margin-right: 30px;
+}
+
+#artist-head-card .image img,
+#album-head-card .image img{
+  height: 150px;
+}
+
+/*ARTISTAS Y ALBUMS*/
+.pagination{
+  margin: 0px 80px 10px 0px;
+}
+
+.artist_image_for_edit img,
+.album_image_for_edit img{
+  width: 200px;
+}
+
+.artist-list,
+.album-list{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  padding-bottom: 120px;
+}
+
+.artist-item,
+.album-item{
+  /* width: 22%; */
+padding: 0px;
+margin: 0px;
+/* height: 280px; */
+/* margin-left: 10px; */
+margin-right: 10px;
+padding-bottom: 15px;
+}
+
+.artist-item .artist-image,
+.album-item .album-image{
+  height: 245px;
+  width: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.artist-item .artist-image img{
+  height: 100%;
+}
+
+/*ALBUMS*/
+.album-list{
+
+}
+.album-item .album-image{
+  height: 188px;
+}
+.album-item{
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.album-item .album-image img{
+  width: 100%;
+}
+
+.artist-item .artist-name,
+.album-item .album-name {
+  color: white;
+  padding: 10px;
+  background: #222326;
+}
+
+.artist-item .artist-name a,
+.album-item .album-name a{
+  color: white;
+}
+
+/*CANCIONES*/
+#song-list{
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 120px;
+}
+
+.song-item{
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  padding-top: 3px;
+}
+
+.song-item .title{
+  padding: 12px;
+}
+.song-item .buttons{
+  float: right;
+}
+
+.song-item .btn-success{
+  margin-right: 10px;
+}
+
+/*PLAYER Desktop*/
+.player{
+  background: #1C1C1F;
+  position: fixed;
+  width: 96.5%;
+  bottom: 0;
+  padding-left: 4%;
+  margin-left: -4%;
+  border-left: 1px solid #444;
+  color: gray;
+  height: 120px;
+}
+
+.player .album-image{
+  float: left;
+  width: 75px;
+  height: 70px;
+  overflow: hidden;
+  margin-top: -30px;
+}
+
+.player .album-image img{
+  height: 100%;
+}
+
+.player .audio-file{
+  width: 85%;
+  height: 40px;
+  margin-top: 40px;
+  float: left;
+}
+
+.player audio{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.player .letra-cancion{
+  color: gray;
+  font-size: 15px;
+  width: 66%;
+  float: left;
+  margin-top: 7px;
+  margin-left: 32%;
+  position: absolute;
+  padding-left: 5px;
+  text-align: center;
+  font-family: cursive;
+}
+
+/*PLAYER Mobil*/
+#btn-letra {
+    float: right;
+    margin-right: 50px;
+    margin-top: -120px;
+}
+
+.playerMobil{
+  background: #1C1C1F;
+  position: fixed;
+  width: 91.5%;
+  bottom: 0;
+  padding-left: 10px;
+  margin-left: -6.3%;
+  border-left: 1px solid #444;
+  color: gray;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+  transition-delay: 0.5s;
+}
+
+.playerMobil.closed{
+  height: 215px;
+}
+
+.playerMobil .album-image{
+  float: left;
+  width: 75px;
+  height: 70px;
+  overflow: hidden;
+  margin-top: -30px;
+}
+
+.playerMobil .album-image img{
+  height: 100%;
+}
+
+.playerMobil .audio-file{
+  width: 85%;
+  float: left;
+  margin-top: 5px;
+}
+
+.playerMobil audio{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.playerMobil .letra-cancion{
+  color: gray;
+  font-size: 13px;
+  margin-top: 105px;
+  position: absolute;
+  padding-left: 5px;
+  text-align: center;
+  font-family: cursive;
+}
+
+.playerMobil .current-lyric{
+  height: 40px;
+  display: inline-flex;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.playerMobil .oracion{
+  font-size: 14px;
+  font-family: cursive;
+  float: left;
+}
+
+#icon_voice #icon_voice_2{
+  float: right;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.player #prev-lyric{
+  margin-bottom: 0px;
+}
+
+.player .current-lyric{
+  height: 28px;
+  display: inline-flex;
+  color: white;
+}
+
+.player .oracion{
+  font-size: 20px;
+  font-family: cursive;
+  float: left;
+}
+
+.current-lyric .glyphicon-music{
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: 8px;
+}
+
+/*LETRA DE LA EDICION*/
+.song_lyric_for_edit {
+    margin-top: 20%;
+}
+
+#lyric-song{
+  text-align: center;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  height: 330px;
+  overflow-y: scroll;
+  position: absolute;
+}
+
+.letraSong {
+  font-family: cursive;
+  font-size: 16px;
+}
